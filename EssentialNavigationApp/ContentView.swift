@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  EssentialNavigationApp
-//
-//  Created by Andy Bezaire on 10.4.2022.
-//
-
 import SwiftUI
 
 struct ContentView: View {

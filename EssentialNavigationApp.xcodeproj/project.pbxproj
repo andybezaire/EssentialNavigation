@@ -13,7 +13,6 @@
 		A1566F50280354FC00500F98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1566F4F280354FC00500F98 /* Preview Assets.xcassets */; };
 		A1566F5A280354FD00500F98 /* EssentialNavigationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F59280354FD00500F98 /* EssentialNavigationAppTests.swift */; };
 		A1566F64280354FD00500F98 /* EssentialNavigationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F63280354FD00500F98 /* EssentialNavigationAppUITests.swift */; };
-		A1566F66280354FD00500F98 /* EssentialNavigationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F65280354FD00500F98 /* EssentialNavigationAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		A1566F59280354FD00500F98 /* EssentialNavigationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialNavigationAppTests.swift; sourceTree = "<group>"; };
 		A1566F5F280354FD00500F98 /* EssentialNavigationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialNavigationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1566F63280354FD00500F98 /* EssentialNavigationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialNavigationAppUITests.swift; sourceTree = "<group>"; };
-		A1566F65280354FD00500F98 /* EssentialNavigationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialNavigationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				A1566F63280354FD00500F98 /* EssentialNavigationAppUITests.swift */,
-				A1566F65280354FD00500F98 /* EssentialNavigationAppUITestsLaunchTests.swift */,
 			);
 			path = EssentialNavigationAppUITests;
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1566F64280354FD00500F98 /* EssentialNavigationAppUITests.swift in Sources */,
-				A1566F66280354FD00500F98 /* EssentialNavigationAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
