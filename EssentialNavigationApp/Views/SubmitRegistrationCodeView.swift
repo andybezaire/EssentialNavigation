@@ -13,6 +13,7 @@ struct SubmitRegistrationCodeView: View {
             }
             Button(action: { }) {
                 Text("Submit Code")
+                    .frame(maxWidth: .infinity)
             }
         }
     }

@@ -1,16 +1,16 @@
-//
-//  RegisterView.swift
-//  EssentialNavigationApp
-//
-//  Created by Andy Bezaire on 10.4.2022.
-//
-
 import SwiftUI
 
 struct RegisterView: View {
+    @State private var code: String?
     var body: some View {
         NavigationView {
-            SubmitRegistrationCodeView()
+            Group {
+                if let code = code {
+                    SuccessfullyRegisteredView(code: code)
+                } else {
+                    SubmitRegistrationCodeView()
+                }
+            }
                 .navigationTitle("Registration")
         }
     }

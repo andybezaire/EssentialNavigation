@@ -15,6 +15,7 @@ struct RequestRegistrationCodeView: View {
             }
             Button(action: { }) {
                 Text("Request Registration Code")
+                    .frame(maxWidth: .infinity)
             }
         }
     }
