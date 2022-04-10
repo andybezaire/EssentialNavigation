@@ -13,6 +13,10 @@
 		A1566F50280354FC00500F98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1566F4F280354FC00500F98 /* Preview Assets.xcassets */; };
 		A1566F5A280354FD00500F98 /* EssentialNavigationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F59280354FD00500F98 /* EssentialNavigationAppTests.swift */; };
 		A1566F64280354FD00500F98 /* EssentialNavigationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F63280354FD00500F98 /* EssentialNavigationAppUITests.swift */; };
+		A1566F7428036D1000500F98 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7328036D1000500F98 /* InfoView.swift */; };
+		A1566F7628036FE700500F98 /* KeysListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7528036FE700500F98 /* KeysListView.swift */; };
+		A1566F7828036FF900500F98 /* DoorsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7728036FF900500F98 /* DoorsListView.swift */; };
+		A1566F7A2803702D00500F98 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F792803702D00500F98 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		A1566F59280354FD00500F98 /* EssentialNavigationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialNavigationAppTests.swift; sourceTree = "<group>"; };
 		A1566F5F280354FD00500F98 /* EssentialNavigationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialNavigationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1566F63280354FD00500F98 /* EssentialNavigationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialNavigationAppUITests.swift; sourceTree = "<group>"; };
+		A1566F7328036D1000500F98 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		A1566F7528036FE700500F98 /* KeysListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysListView.swift; sourceTree = "<group>"; };
+		A1566F7728036FF900500F98 /* DoorsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsListView.swift; sourceTree = "<group>"; };
+		A1566F792803702D00500F98 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +100,8 @@
 		A1566F47280354FC00500F98 /* EssentialNavigationApp */ = {
 			isa = PBXGroup;
 			children = (
+				A1566F7228036CFA00500F98 /* Views */,
 				A1566F48280354FC00500F98 /* EssentialNavigationAppApp.swift */,
-				A1566F4A280354FC00500F98 /* ContentView.swift */,
 				A1566F4C280354FC00500F98 /* Assets.xcassets */,
 				A1566F4E280354FC00500F98 /* Preview Content */,
 			);
@@ -122,6 +130,18 @@
 				A1566F63280354FD00500F98 /* EssentialNavigationAppUITests.swift */,
 			);
 			path = EssentialNavigationAppUITests;
+			sourceTree = "<group>";
+		};
+		A1566F7228036CFA00500F98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1566F4A280354FC00500F98 /* ContentView.swift */,
+				A1566F7328036D1000500F98 /* InfoView.swift */,
+				A1566F7528036FE700500F98 /* KeysListView.swift */,
+				A1566F7728036FF900500F98 /* DoorsListView.swift */,
+				A1566F792803702D00500F98 /* RegisterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1566F7628036FE700500F98 /* KeysListView.swift in Sources */,
 				A1566F4B280354FC00500F98 /* ContentView.swift in Sources */,
+				A1566F7428036D1000500F98 /* InfoView.swift in Sources */,
+				A1566F7A2803702D00500F98 /* RegisterView.swift in Sources */,
 				A1566F49280354FC00500F98 /* EssentialNavigationAppApp.swift in Sources */,
+				A1566F7828036FF900500F98 /* DoorsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
