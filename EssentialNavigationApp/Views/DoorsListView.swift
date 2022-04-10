@@ -1,25 +1,12 @@
-//
-//  DoorsListView.swift
-//  EssentialNavigationApp
-//
-//  Created by Andy Bezaire on 10.4.2022.
-//
-
 import SwiftUI
 
 struct DoorsListView: View {
     var body: some View {
         NavigationView {
             Form {
-                Button(action: { }) {
-                    Label("Main Office", systemImage: "lock.open")
-                }
-                Button(action: { }) {
-                    Label("Factory", systemImage: "lock")
-                }
-                Button(action: { }) {
-                    Label("Garage", systemImage: "lock.open")
-                }
+                DoorButton("Main Office", isLocked: false)
+                DoorButton("Factory")
+                DoorButton("Garage", isLocked: false)
                 
                 Section("No Access") {
                     Label("Storage", systemImage: "lock")
@@ -30,6 +17,23 @@ struct DoorsListView: View {
 
             }
             .navigationTitle("Doors")
+        }
+    }
+}
+
+struct DoorButton: View {
+    let title: String
+    
+    @State private var isLocked: Bool
+    
+    init(_ title: String, isLocked: Bool = true) {
+        self.title = title
+        self.isLocked = isLocked
+    }
+    
+    var body: some View {
+        Button(action: { isLocked.toggle() }) {
+            Label(title, systemImage: isLocked ? "lock" : "lock.open")
         }
     }
 }
