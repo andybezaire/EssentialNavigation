@@ -1,26 +1,35 @@
-//
-//  KeysListView.swift
-//  EssentialNavigationApp
-//
-//  Created by Andy Bezaire on 10.4.2022.
-//
-
 import SwiftUI
 
 struct KeysListView: View {
     var body: some View {
         NavigationView {
             Form {
-                Label("Main Office", systemImage: "key")
-                Label("Factory", systemImage: "key")
-                Label("Garage", systemImage: "key")
+                KeyLink("Main Office")
+                KeyLink("Factory")
+                KeyLink("Garage")
                 Section("Inactive") {
-                    Label("Storage", systemImage: "key")
-                    Label("Server Room", systemImage: "key")
+                    KeyLink("Storage")
+                    KeyLink("Server Room")
                 }
                 .foregroundColor(.secondary)
             }
             .navigationTitle("Keys")
+        }
+    }
+}
+
+struct KeyLink: View {
+    let title: String
+    
+    init(_ title: String) {
+        self.title = title
+    }
+    
+    var body: some View {
+        NavigationLink {
+            Text("\(title) Key details")
+        } label: {
+            Label(title, systemImage: "key")
         }
     }
 }
