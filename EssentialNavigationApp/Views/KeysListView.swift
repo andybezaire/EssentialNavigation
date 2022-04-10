@@ -9,7 +9,7 @@ struct KeysListView: View {
                 if isRegistered {
                     keysListContent
                 } else {
-                    SubmitRegistrationCodeView()
+                    RequestRegistrationCodeView()
                 }
             }
             .navigationTitle("Keys")

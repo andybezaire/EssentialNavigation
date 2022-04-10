@@ -9,7 +9,7 @@ struct DoorsListView: View {
                 if isRegistered {
                     doorsListContent
                 } else {
-                    SubmitRegistrationCodeView()
+                    RequestRegistrationCodeView()
                 }
             }
             .navigationTitle("Doors")

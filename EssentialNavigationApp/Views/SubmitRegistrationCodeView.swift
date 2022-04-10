@@ -1,20 +1,18 @@
 import SwiftUI
 
-private let instructions = "You will need to register the app before you can view your keys or doors. \nPlease enter your details and request a registration code."
+private let instructions = "Please enter your registration code.\nThis code was sent to you via sms/email."
 
 struct SubmitRegistrationCodeView: View {
-    @State private var email: String = ""
-    @State private var phone: String = ""
+    @State private var code: String = ""
     
     var body: some View {
         Form {
             Text(instructions)
             Section {
-                TextField("email", text: $email)
-                TextField("phone", text: $email)
+                TextField("registration code", text: $code)
             }
             Button(action: { }) {
-                Text("Request Registration Code")
+                Text("Submit Code")
             }
         }
     }
