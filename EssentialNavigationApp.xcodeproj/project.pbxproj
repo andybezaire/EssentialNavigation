@@ -17,6 +17,7 @@
 		A1566F7628036FE700500F98 /* KeysListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7528036FE700500F98 /* KeysListView.swift */; };
 		A1566F7828036FF900500F98 /* DoorsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7728036FF900500F98 /* DoorsListView.swift */; };
 		A1566F7A2803702D00500F98 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F792803702D00500F98 /* RegisterView.swift */; };
+		A1566F7C2803795500500F98 /* SubmitRegistrationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		A1566F7528036FE700500F98 /* KeysListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysListView.swift; sourceTree = "<group>"; };
 		A1566F7728036FF900500F98 /* DoorsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsListView.swift; sourceTree = "<group>"; };
 		A1566F792803702D00500F98 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitRegistrationCodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				A1566F7528036FE700500F98 /* KeysListView.swift */,
 				A1566F7728036FF900500F98 /* DoorsListView.swift */,
 				A1566F792803702D00500F98 /* RegisterView.swift */,
+				A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				A1566F7628036FE700500F98 /* KeysListView.swift in Sources */,
 				A1566F4B280354FC00500F98 /* ContentView.swift in Sources */,
+				A1566F7C2803795500500F98 /* SubmitRegistrationCodeView.swift in Sources */,
 				A1566F7428036D1000500F98 /* InfoView.swift in Sources */,
 				A1566F7A2803702D00500F98 /* RegisterView.swift in Sources */,
 				A1566F49280354FC00500F98 /* EssentialNavigationAppApp.swift in Sources */,

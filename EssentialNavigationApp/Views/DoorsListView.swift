@@ -1,22 +1,33 @@
 import SwiftUI
 
 struct DoorsListView: View {
+    @State private var isRegistered: Bool = false
+    
     var body: some View {
         NavigationView {
-            Form {
-                DoorButton("Main Office", isLocked: false)
-                DoorButton("Factory")
-                DoorButton("Garage", isLocked: false)
-                
-                Section("No Access") {
-                    Label("Storage", systemImage: "lock")
-                    Label("Server Room", systemImage: "lock")
-                    Label("Maintenance", systemImage: "lock")
+            Group {
+                if isRegistered {
+                    doorsListContent
+                } else {
+                    SubmitRegistrationCodeView()
                 }
-                .foregroundColor(.secondary)
-
             }
             .navigationTitle("Doors")
+        }
+    }
+    
+    var doorsListContent: some View {
+        Form {
+            DoorButton("Main Office", isLocked: false)
+            DoorButton("Factory")
+            DoorButton("Garage", isLocked: false)
+            
+            Section("No Access") {
+                Label("Storage", systemImage: "lock")
+                Label("Server Room", systemImage: "lock")
+                Label("Maintenance", systemImage: "lock")
+            }
+            .foregroundColor(.secondary)
         }
     }
 }

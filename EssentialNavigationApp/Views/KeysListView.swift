@@ -1,19 +1,31 @@
 import SwiftUI
 
 struct KeysListView: View {
+    @State private var isRegistered: Bool = false
+    
     var body: some View {
         NavigationView {
-            Form {
-                KeyLink("Main Office")
-                KeyLink("Factory")
-                KeyLink("Garage")
-                Section("Inactive") {
-                    KeyLink("Storage")
-                    KeyLink("Server Room")
+            Group {
+                if isRegistered {
+                    keysListContent
+                } else {
+                    SubmitRegistrationCodeView()
                 }
-                .foregroundColor(.secondary)
             }
             .navigationTitle("Keys")
+        }
+    }
+    
+    var keysListContent: some View {
+        Form {
+            KeyLink("Main Office")
+            KeyLink("Factory")
+            KeyLink("Garage")
+            Section("Inactive") {
+                KeyLink("Storage")
+                KeyLink("Server Room")
+            }
+            .foregroundColor(.secondary)
         }
     }
 }
