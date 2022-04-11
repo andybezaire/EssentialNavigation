@@ -11,3 +11,13 @@ class RequestRegistrationCodeViewModel: ObservableObject {
         service.requestCode()
     }
 }
+
+extension RequestRegistrationCodeViewModel {
+    static func stub() -> RequestRegistrationCodeViewModel {
+        RequestRegistrationCodeViewModel.init(service: ServiceStub())
+    }
+
+    class ServiceStub: RegistrationRequestService {
+        func requestCode() { }
+    }
+}

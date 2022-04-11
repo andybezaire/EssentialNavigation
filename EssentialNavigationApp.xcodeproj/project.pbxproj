@@ -23,6 +23,7 @@
 		A178E3A128047C41006841AE /* RegistrationRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A178E3A028047C41006841AE /* RegistrationRequestService.swift */; };
 		A178E3A328047EEF006841AE /* RequestRegistrationCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A178E3A228047EEF006841AE /* RequestRegistrationCodeViewModel.swift */; };
 		A178E3A528047F68006841AE /* RequestRegistrationCodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A178E3A428047F68006841AE /* RequestRegistrationCodeViewModelTests.swift */; };
+		A178E3A728048662006841AE /* AutomaticRegistrationRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A178E3A628048662006841AE /* AutomaticRegistrationRequestService.swift */; };
 		A1D1B11E2803FD1B000312F9 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1B11D2803FD1B000312F9 /* RegisterViewModel.swift */; };
 		A1D1B1202803FDC5000312F9 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1B11F2803FDC5000312F9 /* RegistrationService.swift */; };
 		A1D1B1222803FF4A000312F9 /* RegisterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1B1212803FF4A000312F9 /* RegisterViewModelTests.swift */; };
@@ -66,6 +67,7 @@
 		A178E3A028047C41006841AE /* RegistrationRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequestService.swift; sourceTree = "<group>"; };
 		A178E3A228047EEF006841AE /* RequestRegistrationCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRegistrationCodeViewModel.swift; sourceTree = "<group>"; };
 		A178E3A428047F68006841AE /* RequestRegistrationCodeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRegistrationCodeViewModelTests.swift; sourceTree = "<group>"; };
+		A178E3A628048662006841AE /* AutomaticRegistrationRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticRegistrationRequestService.swift; sourceTree = "<group>"; };
 		A1D1B11D2803FD1B000312F9 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		A1D1B11F2803FDC5000312F9 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
 		A1D1B1212803FF4A000312F9 /* RegisterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModelTests.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				A1D1B11F2803FDC5000312F9 /* RegistrationService.swift */,
 				A1D1B12328040706000312F9 /* LocalRegistrationService.swift */,
 				A178E3A028047C41006841AE /* RegistrationRequestService.swift */,
+				A178E3A628048662006841AE /* AutomaticRegistrationRequestService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				A1566F49280354FC00500F98 /* EssentialNavigationAppApp.swift in Sources */,
 				A1566F7828036FF900500F98 /* DoorsListView.swift in Sources */,
 				A178E3A128047C41006841AE /* RegistrationRequestService.swift in Sources */,
+				A178E3A728048662006841AE /* AutomaticRegistrationRequestService.swift in Sources */,
 				A1D1B1202803FDC5000312F9 /* RegistrationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
