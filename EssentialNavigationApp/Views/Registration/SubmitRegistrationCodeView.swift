@@ -23,6 +23,6 @@ struct SubmitRegistrationCodeView_Previews: PreviewProvider {
     static var previews: some View {
         SubmitRegistrationCodeView()
             .previewLayout(.sizeThatFits)
-            .environmentObject(SubmitRegistrationCodeView.ViewModel.init(service: LocalRegistrationService()))
+            .environmentObject(SubmitRegistrationCodeView.ViewModel.stub(withCode: "00000-00000-00000-00000"))
     }
 }

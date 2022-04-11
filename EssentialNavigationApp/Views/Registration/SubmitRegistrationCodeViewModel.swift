@@ -15,3 +15,11 @@ public extension SubmitRegistrationCodeView {
         }
     }
 }
+
+public extension SubmitRegistrationCodeView.ViewModel {
+    static func stub(withCode code: String) -> SubmitRegistrationCodeView.ViewModel {
+        let viewModel = SubmitRegistrationCodeView.ViewModel.init(service: LocalRegistrationService())
+        viewModel.registrationCode = code
+        return viewModel
+    }
+}
