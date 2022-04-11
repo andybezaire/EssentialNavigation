@@ -2,7 +2,7 @@ import XCTest
 @testable import EssentialNavigationApp
 
 class RegisterViewModelTests: XCTestCase {
-    func test_submitCode_submitsCodeToService() {
+    func test_submitCode_submitsCodeToServiceAndSetsCode() {
         let (sut, spy) = makeSUT()
         let code = uniqueRegistrationCode()
         sut.editRegistrationCode = code
@@ -10,6 +10,7 @@ class RegisterViewModelTests: XCTestCase {
         sut.submitCode()
 
         XCTAssertEqual(spy.messages.first?.description, code)
+        XCTAssertEqual(sut.registrationCode, code)
     }
 
     func test_initWithNoCodeService_initsWithNoCode() {
@@ -60,8 +61,9 @@ class RegisterViewModelTests: XCTestCase {
 }
 
 extension RegisterViewModelTests.RegistrationServiceSpy: RegistrationService {
-    func register(code: String) {
+    func register(code: String) -> String? {
         messages.append(.register(code: code))
+        return code
     }
 
     func unregister() -> String? {

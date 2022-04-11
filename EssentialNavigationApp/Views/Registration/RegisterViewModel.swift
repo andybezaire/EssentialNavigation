@@ -13,7 +13,7 @@ class RegisterViewModel: ObservableObject {
     }
 
     public func submitCode() {
-        service.register(code: editRegistrationCode)
+        registrationCode = service.register(code: editRegistrationCode)
     }
 
     func unregisterCode() {
