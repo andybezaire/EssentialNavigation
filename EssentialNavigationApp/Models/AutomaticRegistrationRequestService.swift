@@ -10,7 +10,7 @@ class AutomaticRegistrationRequestService: RegistrationRequestService {
     }
 
     func requestCode() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
             self?.sendCode?("01234-56789-01234-56789")
         }
     }

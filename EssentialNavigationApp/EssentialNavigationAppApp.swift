@@ -4,11 +4,10 @@ let registrationService = LocalRegistrationService()
 
 let registerViewModel: RegisterViewModel = {
     let viewModel = RegisterViewModel.init(service: registrationService)
-    viewModel.editRegistrationCode = "inital-code"
     return viewModel
 }()
 
-let requestService = AutomaticRegistrationRequestService() { print($0) }
+let requestService = AutomaticRegistrationRequestService() { registerViewModel.editRegistrationCode = $0 }
 
 let requestRegistrationCodeViewModel = RequestRegistrationCodeViewModel(service: requestService)
 
