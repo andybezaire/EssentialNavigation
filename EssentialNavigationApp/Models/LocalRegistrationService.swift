@@ -6,4 +6,6 @@ class LocalRegistrationService: RegistrationService {
     func register(code: String) {
 
     }
+
+    func unregister() -> String? { nil }
 }

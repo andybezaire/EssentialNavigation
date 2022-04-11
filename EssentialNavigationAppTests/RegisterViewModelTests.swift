@@ -25,6 +25,16 @@ class RegisterViewModelTests: XCTestCase {
         XCTAssertEqual(sut.registrationCode, code)
     }
 
+    func test_unregister_callsServiceAndClearsCode() {
+        let code = uniqueRegistrationCode()
+        let (sut, spy) = makeSUT(withServiceCode: code)
+
+        sut.unregisterCode()
+
+        XCTAssertEqual(spy.messages.first?.description, "message: unregister()")
+        XCTAssertNil(sut.registrationCode)
+    }
+
     // MARK: - helpers
     func makeSUT(withServiceCode code: String? = nil) -> (RegisterViewModel, RegistrationServiceSpy) {
         let service = RegistrationServiceSpy()
@@ -38,6 +48,7 @@ class RegisterViewModelTests: XCTestCase {
 
         enum Message {
             case register(code: String)
+            case unregister
         }
 
         var messages: [Message] = []
@@ -52,6 +63,11 @@ extension RegisterViewModelTests.RegistrationServiceSpy: RegistrationService {
     func register(code: String) {
         messages.append(.register(code: code))
     }
+
+    func unregister() -> String? {
+        messages.append(.unregister)
+        return nil
+    }
 }
 
 extension RegisterViewModelTests.RegistrationServiceSpy.Message: CustomStringConvertible {
@@ -59,6 +75,8 @@ extension RegisterViewModelTests.RegistrationServiceSpy.Message: CustomStringCon
         switch self {
         case let .register(code: code):
             return code
+        case .unregister:
+            return "message: unregister()"
         }
     }
 }
