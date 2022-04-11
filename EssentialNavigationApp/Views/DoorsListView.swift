@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct DoorsListView: View {
-    @State private var isRegistered: Bool = false
-    
+    @EnvironmentObject private var model: RegisterViewModel
+
     var body: some View {
         NavigationView {
             Group {
-                if isRegistered {
+                if model.isRegistered {
                     doorsListContent
                 } else {
                     RequestRegistrationCodeView()
@@ -53,5 +53,6 @@ struct DoorsListView_Previews: PreviewProvider {
     static var previews: some View {
         DoorsListView()
             .previewLayout(.sizeThatFits)
+            .environmentObject(RegisterViewModel.stub())
     }
 }

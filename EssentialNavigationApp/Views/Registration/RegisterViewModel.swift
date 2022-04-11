@@ -7,6 +7,8 @@ class RegisterViewModel: ObservableObject {
 
     @Published public var editRegistrationCode: String = ""
 
+    var isRegistered: Bool { registrationCode != nil }
+
     public init(service: RegistrationService) {
         self.service = service
         self.registrationCode = service.registrationCode
@@ -23,7 +25,7 @@ class RegisterViewModel: ObservableObject {
 }
 
 extension RegisterViewModel {
-    static func stub(withCode code: String) -> RegisterViewModel {
+    static func stub(withCode code: String = "stub-code") -> RegisterViewModel {
         let viewModel: RegisterViewModel = .init(service: LocalRegistrationService())
         viewModel.editRegistrationCode = code
         return viewModel

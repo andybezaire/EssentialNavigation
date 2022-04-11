@@ -21,6 +21,6 @@ struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
             .previewLayout(.sizeThatFits)
-            .environmentObject(RegisterViewModel.stub(withCode: "00000-00000-00000-00000"))
+            .environmentObject(RegisterViewModel.stub())
     }
 }
