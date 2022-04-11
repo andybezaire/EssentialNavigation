@@ -1,7 +1,7 @@
 import XCTest
-import EssentialNavigationApp
+@testable import EssentialNavigationApp
 
-class SubmitRegistrationCodeViewModelTests: XCTestCase {
+class RegisterViewModelTests: XCTestCase {
     func test_submitCode_submitsCodeToService() {
         let (sut, spy) = makeSUT()
         let code = uniqueRegistrationCode()
@@ -13,9 +13,9 @@ class SubmitRegistrationCodeViewModelTests: XCTestCase {
     }
 
     // MARK: - helpers
-    func makeSUT() -> (SubmitRegistrationCodeView.ViewModel, RegistrationServiceSpy) {
+    func makeSUT() -> (RegisterViewModel, RegistrationServiceSpy) {
         let service = RegistrationServiceSpy()
-        let model = SubmitRegistrationCodeView.ViewModel(service: service)
+        let model = RegisterViewModel(service: service)
         return (model, service)
     }
 
@@ -32,13 +32,13 @@ class SubmitRegistrationCodeViewModelTests: XCTestCase {
     }
 }
 
-extension SubmitRegistrationCodeViewModelTests.RegistrationServiceSpy: RegistrationService {
+extension RegisterViewModelTests.RegistrationServiceSpy: RegistrationService {
     func register(code: String) {
         messages.append(.register(code: code))
     }
 }
 
-extension SubmitRegistrationCodeViewModelTests.RegistrationServiceSpy.Message: CustomStringConvertible {
+extension RegisterViewModelTests.RegistrationServiceSpy.Message: CustomStringConvertible {
     var description: String {
         switch self {
         case let .register(code: code):
