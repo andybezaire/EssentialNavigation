@@ -20,6 +20,7 @@
 		A1566F7C2803795500500F98 /* SubmitRegistrationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */; };
 		A1566F7E280380B500500F98 /* RequestRegistrationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */; };
 		A1566F802803823700500F98 /* SuccessfullyRegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */; };
+		A1D1B11E2803FD1B000312F9 /* SubmitRegistrationCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1B11D2803FD1B000312F9 /* SubmitRegistrationCodeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitRegistrationCodeView.swift; sourceTree = "<group>"; };
 		A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRegistrationCodeView.swift; sourceTree = "<group>"; };
 		A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullyRegisteredView.swift; sourceTree = "<group>"; };
+		A1D1B11D2803FD1B000312F9 /* SubmitRegistrationCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitRegistrationCodeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		A1566F47280354FC00500F98 /* EssentialNavigationApp */ = {
 			isa = PBXGroup;
 			children = (
+				A1D1B11B2803F945000312F9 /* Models */,
 				A1566F7228036CFA00500F98 /* Views */,
 				A1566F48280354FC00500F98 /* EssentialNavigationAppApp.swift */,
 				A1566F4C280354FC00500F98 /* Assets.xcassets */,
@@ -141,16 +144,32 @@
 		A1566F7228036CFA00500F98 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1D1B11C2803FC0B000312F9 /* Registration */,
 				A1566F4A280354FC00500F98 /* ContentView.swift */,
 				A1566F7328036D1000500F98 /* InfoView.swift */,
 				A1566F7528036FE700500F98 /* KeysListView.swift */,
 				A1566F7728036FF900500F98 /* DoorsListView.swift */,
-				A1566F792803702D00500F98 /* RegisterView.swift */,
-				A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */,
-				A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */,
-				A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A1D1B11B2803F945000312F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1D1B11C2803FC0B000312F9 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */,
+				A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */,
+				A1566F792803702D00500F98 /* RegisterView.swift */,
+				A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */,
+				A1D1B11D2803FD1B000312F9 /* SubmitRegistrationCodeViewModel.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +308,7 @@
 				A1566F7C2803795500500F98 /* SubmitRegistrationCodeView.swift in Sources */,
 				A1566F802803823700500F98 /* SuccessfullyRegisteredView.swift in Sources */,
 				A1566F7428036D1000500F98 /* InfoView.swift in Sources */,
+				A1D1B11E2803FD1B000312F9 /* SubmitRegistrationCodeViewModel.swift in Sources */,
 				A1566F7A2803702D00500F98 /* RegisterView.swift in Sources */,
 				A1566F49280354FC00500F98 /* EssentialNavigationAppApp.swift in Sources */,
 				A1566F7828036FF900500F98 /* DoorsListView.swift in Sources */,

@@ -3,15 +3,15 @@ import SwiftUI
 private let instructions = "Please enter your registration code.\nThis code was sent to you via sms/email."
 
 struct SubmitRegistrationCodeView: View {
-    @State private var code: String = ""
+    @ObservedObject var model: ViewModel
     
     var body: some View {
         Form {
             Text(instructions)
             Section {
-                TextField("registration code", text: $code)
+                TextField("registration code", text: $model.registrationCode)
             }
-            Button(action: { }) {
+            Button(action: model.submitCode) {
                 Text("Submit Code")
                     .frame(maxWidth: .infinity)
             }
@@ -21,7 +21,7 @@ struct SubmitRegistrationCodeView: View {
 
 struct SubmitRegistrationCodeView_Previews: PreviewProvider {
     static var previews: some View {
-        SubmitRegistrationCodeView()
+        SubmitRegistrationCodeView(model: .init())
             .previewLayout(.sizeThatFits)
     }
 }

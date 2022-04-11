@@ -8,7 +8,7 @@ struct RegisterView: View {
                 if let code = code {
                     SuccessfullyRegisteredView(code: code)
                 } else {
-                    SubmitRegistrationCodeView()
+                    SubmitRegistrationCodeView(model: .init())
                 }
             }
                 .navigationTitle("Registration")
