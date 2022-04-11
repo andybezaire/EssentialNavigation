@@ -21,6 +21,9 @@
 		A1566F7E280380B500500F98 /* RequestRegistrationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */; };
 		A1566F802803823700500F98 /* SuccessfullyRegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */; };
 		A1D1B11E2803FD1B000312F9 /* SubmitRegistrationCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1B11D2803FD1B000312F9 /* SubmitRegistrationCodeViewModel.swift */; };
+		A1D1B1202803FDC5000312F9 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1B11F2803FDC5000312F9 /* RegistrationService.swift */; };
+		A1D1B1222803FF4A000312F9 /* SubmitRegistrationCodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1B1212803FF4A000312F9 /* SubmitRegistrationCodeViewModelTests.swift */; };
+		A1D1B12428040706000312F9 /* LocalRegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1B12328040706000312F9 /* LocalRegistrationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRegistrationCodeView.swift; sourceTree = "<group>"; };
 		A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullyRegisteredView.swift; sourceTree = "<group>"; };
 		A1D1B11D2803FD1B000312F9 /* SubmitRegistrationCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitRegistrationCodeViewModel.swift; sourceTree = "<group>"; };
+		A1D1B11F2803FDC5000312F9 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		A1D1B1212803FF4A000312F9 /* SubmitRegistrationCodeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitRegistrationCodeViewModelTests.swift; sourceTree = "<group>"; };
+		A1D1B12328040706000312F9 /* LocalRegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRegistrationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				A1566F59280354FD00500F98 /* EssentialNavigationAppTests.swift */,
+				A1D1B1212803FF4A000312F9 /* SubmitRegistrationCodeViewModelTests.swift */,
 			);
 			path = EssentialNavigationAppTests;
 			sourceTree = "<group>";
@@ -156,6 +163,8 @@
 		A1D1B11B2803F945000312F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1D1B11F2803FDC5000312F9 /* RegistrationService.swift */,
+				A1D1B12328040706000312F9 /* LocalRegistrationService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D1B12428040706000312F9 /* LocalRegistrationService.swift in Sources */,
 				A1566F7628036FE700500F98 /* KeysListView.swift in Sources */,
 				A1566F4B280354FC00500F98 /* ContentView.swift in Sources */,
 				A1566F7E280380B500500F98 /* RequestRegistrationCodeView.swift in Sources */,
@@ -312,6 +322,7 @@
 				A1566F7A2803702D00500F98 /* RegisterView.swift in Sources */,
 				A1566F49280354FC00500F98 /* EssentialNavigationAppApp.swift in Sources */,
 				A1566F7828036FF900500F98 /* DoorsListView.swift in Sources */,
+				A1D1B1202803FDC5000312F9 /* RegistrationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D1B1222803FF4A000312F9 /* SubmitRegistrationCodeViewModelTests.swift in Sources */,
 				A1566F5A280354FD00500F98 /* EssentialNavigationAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

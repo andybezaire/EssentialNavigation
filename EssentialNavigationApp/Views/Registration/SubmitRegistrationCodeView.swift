@@ -2,10 +2,14 @@ import SwiftUI
 
 private let instructions = "Please enter your registration code.\nThis code was sent to you via sms/email."
 
-struct SubmitRegistrationCodeView: View {
-    @ObservedObject var model: ViewModel
+public struct SubmitRegistrationCodeView: View {
+    @ObservedObject private var model: ViewModel
+
+    init(model: ViewModel) {
+        self.model = model
+    }
     
-    var body: some View {
+    public var body: some View {
         Form {
             Text(instructions)
             Section {
@@ -21,7 +25,7 @@ struct SubmitRegistrationCodeView: View {
 
 struct SubmitRegistrationCodeView_Previews: PreviewProvider {
     static var previews: some View {
-        SubmitRegistrationCodeView(model: .init())
+        SubmitRegistrationCodeView(model: .init(service: LocalRegistrationService()))
             .previewLayout(.sizeThatFits)
     }
 }

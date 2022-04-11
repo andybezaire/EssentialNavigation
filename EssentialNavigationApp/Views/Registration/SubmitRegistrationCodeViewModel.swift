@@ -1,11 +1,17 @@
 import Foundation
 
-extension SubmitRegistrationCodeView {
+public extension SubmitRegistrationCodeView {
     class ViewModel: ObservableObject {
-        @Published var registrationCode: String = ""
+        let service: RegistrationService
 
-        func submitCode() {
+        @Published public var registrationCode: String = ""
 
+        public init(service: RegistrationService) {
+            self.service = service
+        }
+
+        public func submitCode() {
+            service.register(code: registrationCode)
         }
     }
 }
