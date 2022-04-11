@@ -172,9 +172,9 @@
 		A1D1B11C2803FC0B000312F9 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */,
-				A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */,
 				A1566F792803702D00500F98 /* RegisterView.swift */,
+				A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */,
+				A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */,
 				A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */,
 				A1D1B11D2803FD1B000312F9 /* RegisterViewModel.swift */,
 			);

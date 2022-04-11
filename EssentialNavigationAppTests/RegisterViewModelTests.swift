@@ -12,14 +12,30 @@ class RegisterViewModelTests: XCTestCase {
         XCTAssertEqual(spy.messages.first?.description, code)
     }
 
+    func test_initWithNoCodeService_initsWithNoCode() {
+        let (sut, _) = makeSUT()
+
+        XCTAssertNil(sut.registrationCode)
+    }
+
+    func test_initWithUniqueCodeService_initsWithUniqueCode() {
+        let code = uniqueRegistrationCode()
+        let (sut, _) = makeSUT(withServiceCode: code)
+
+        XCTAssertEqual(sut.registrationCode, code)
+    }
+
     // MARK: - helpers
-    func makeSUT() -> (RegisterViewModel, RegistrationServiceSpy) {
+    func makeSUT(withServiceCode code: String? = nil) -> (RegisterViewModel, RegistrationServiceSpy) {
         let service = RegistrationServiceSpy()
+        service.registrationCode = code
         let model = RegisterViewModel(service: service)
         return (model, service)
     }
 
     class RegistrationServiceSpy {
+        var registrationCode: String?
+
         enum Message {
             case register(code: String)
         }

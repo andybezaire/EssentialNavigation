@@ -3,10 +3,13 @@ import Foundation
 class RegisterViewModel: ObservableObject {
     let service: RegistrationService
 
+    @Published public var registrationCode: String?
+
     @Published public var editRegistrationCode: String = ""
 
     public init(service: RegistrationService) {
         self.service = service
+        self.registrationCode = service.registrationCode
     }
 
     public func submitCode() {
