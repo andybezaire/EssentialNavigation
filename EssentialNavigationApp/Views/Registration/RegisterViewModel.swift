@@ -14,6 +14,7 @@ class RegisterViewModel: ObservableObject {
 
     public func submitCode() {
         registrationCode = service.register(code: editRegistrationCode)
+        editRegistrationCode = ""
     }
 
     func unregisterCode() {

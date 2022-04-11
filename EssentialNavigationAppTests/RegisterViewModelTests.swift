@@ -2,7 +2,7 @@ import XCTest
 @testable import EssentialNavigationApp
 
 class RegisterViewModelTests: XCTestCase {
-    func test_submitCode_submitsCodeToServiceAndSetsCode() {
+    func test_submitCode_submitsCodeToServiceAndSetsCodeAndClearsEdits() {
         let (sut, spy) = makeSUT()
         let code = uniqueRegistrationCode()
         sut.editRegistrationCode = code
@@ -11,6 +11,7 @@ class RegisterViewModelTests: XCTestCase {
 
         XCTAssertEqual(spy.messages.first?.description, code)
         XCTAssertEqual(sut.registrationCode, code)
+        XCTAssertTrue(sut.editRegistrationCode.isEmpty, "Expected empty but got \(sut.editRegistrationCode)")
     }
 
     func test_initWithNoCodeService_initsWithNoCode() {
