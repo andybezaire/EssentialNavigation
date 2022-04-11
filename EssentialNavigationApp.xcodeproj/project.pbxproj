@@ -114,9 +114,9 @@
 		A1566F47280354FC00500F98 /* EssentialNavigationApp */ = {
 			isa = PBXGroup;
 			children = (
+				A1566F48280354FC00500F98 /* EssentialNavigationAppApp.swift */,
 				A1D1B11B2803F945000312F9 /* Models */,
 				A1566F7228036CFA00500F98 /* Views */,
-				A1566F48280354FC00500F98 /* EssentialNavigationAppApp.swift */,
 				A1566F4C280354FC00500F98 /* Assets.xcassets */,
 				A1566F4E280354FC00500F98 /* Preview Content */,
 			);
