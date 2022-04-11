@@ -1,11 +1,12 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State private var code: String?
+    @EnvironmentObject var model: RegisterViewModel
+
     var body: some View {
         NavigationView {
             Group {
-                if let code = code {
+                if let code = model.registrationCode {
                     SuccessfullyRegisteredView(code: code)
                 } else {
                     SubmitRegistrationCodeView()

@@ -4,7 +4,7 @@ class LocalRegistrationService: RegistrationService {
     var registrationCode: String?
     
     func register(code: String) -> String? {
-        registrationCode = "local-code"
+        registrationCode = code
         return registrationCode
     }
 

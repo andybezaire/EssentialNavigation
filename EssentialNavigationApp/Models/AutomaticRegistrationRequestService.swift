@@ -14,6 +14,4 @@ class AutomaticRegistrationRequestService: RegistrationRequestService {
             self?.sendCode?("01234-56789-01234-56789")
         }
     }
-
-
 }

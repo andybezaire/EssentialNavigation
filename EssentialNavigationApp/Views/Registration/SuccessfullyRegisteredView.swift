@@ -14,7 +14,7 @@ struct SuccessfullyRegisteredView: View {
                     .font(.headline)
                     .frame(maxWidth: .infinity)
             }
-            Button(action: { }) {
+            Button(action: {model.unregisterCode() }) {
                 Text("Unregister")
                     .frame(maxWidth: .infinity)
             }
