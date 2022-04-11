@@ -5,7 +5,7 @@ class RegisterViewModelTests: XCTestCase {
     func test_submitCode_submitsCodeToService() {
         let (sut, spy) = makeSUT()
         let code = uniqueRegistrationCode()
-        sut.registrationCode = code
+        sut.editRegistrationCode = code
 
         sut.submitCode()
 

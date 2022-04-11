@@ -3,7 +3,7 @@ import SwiftUI
 let registrationService = LocalRegistrationService()
 let registerViewModel: RegisterViewModel = {
     let viewModel = RegisterViewModel.init(service: registrationService)
-    viewModel.registrationCode = "inital-code"
+    viewModel.editRegistrationCode = "inital-code"
     return viewModel
 }()
 

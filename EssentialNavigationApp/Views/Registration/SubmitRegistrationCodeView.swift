@@ -9,7 +9,7 @@ public struct SubmitRegistrationCodeView: View {
         Form {
             Text(instructions)
             Section {
-                TextField("registration code", text: $model.registrationCode)
+                TextField("registration code", text: $model.editRegistrationCode)
             }
             Button(action: model.submitCode) {
                 Text("Submit Code")
