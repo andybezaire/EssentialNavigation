@@ -11,6 +11,12 @@ let requestService = AutomaticRegistrationRequestService() { registerViewModel.e
 
 let requestRegistrationCodeViewModel = RequestRegistrationCodeViewModel(service: requestService)
 
+class DisplaySheet: ObservableObject {
+    @Published var isPresented: Bool = false
+}
+
+let sheet = DisplaySheet()
+
 @main
 struct EssentialNavigationAppApp: App {
     var body: some Scene {
@@ -18,6 +24,7 @@ struct EssentialNavigationAppApp: App {
             ContentView()
                 .environmentObject(registerViewModel)
                 .environmentObject(requestRegistrationCodeViewModel)
+                .environmentObject(sheet)
         }
     }
 }

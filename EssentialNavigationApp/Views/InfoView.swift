@@ -41,6 +41,7 @@ struct InfoView: View {
             }
             .font(.body)
             .navigationTitle("Goals")
+            .toolbar { RegisterButton() }
         }
     }
 }
@@ -49,5 +50,6 @@ struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
         InfoView()
             .previewLayout(.sizeThatFits)
+            .environmentObject(DisplaySheet())
     }
 }

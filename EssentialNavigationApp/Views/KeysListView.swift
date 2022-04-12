@@ -13,6 +13,7 @@ struct KeysListView: View {
                 }
             }
             .navigationTitle("Keys")
+            .toolbar { RegisterButton() }
         }
     }
     
@@ -48,8 +49,9 @@ struct KeyLink: View {
 
 struct KeysListView_Previews: PreviewProvider {
     static var previews: some View {
-        KeysListView()
-            .previewLayout(.sizeThatFits)
-            .environmentObject(RegisterViewModel.stub())
+            KeysListView()
+        .previewLayout(.sizeThatFits)
+        .environmentObject(RegisterViewModel.stub())
+        .environmentObject(DisplaySheet())
     }
 }

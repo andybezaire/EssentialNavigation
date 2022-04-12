@@ -13,6 +13,7 @@ struct DoorsListView: View {
                 }
             }
             .navigationTitle("Doors")
+            .toolbar { RegisterButton() }
         }
     }
     
@@ -54,5 +55,6 @@ struct DoorsListView_Previews: PreviewProvider {
         DoorsListView()
             .previewLayout(.sizeThatFits)
             .environmentObject(RegisterViewModel.stub())
+            .environmentObject(DisplaySheet())
     }
 }
