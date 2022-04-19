@@ -1,14 +1,11 @@
 import SwiftUI
 
-let registrationService = LocalRegistrationService()
+let registrationService: RegistrationService = LocalRegistrationService()
+let requestService: RegistrationRequestService = AutomaticRegistrationRequestService() {
+    registerViewModel.editRegistrationCode = $0
+}
 
-let registerViewModel: RegisterViewModel = {
-    let viewModel = RegisterViewModel.init(service: registrationService)
-    return viewModel
-}()
-
-let requestService = AutomaticRegistrationRequestService() { registerViewModel.editRegistrationCode = $0 }
-
+let registerViewModel = RegisterViewModel(service: registrationService)
 let requestRegistrationCodeViewModel = RequestRegistrationCodeViewModel(service: requestService)
 
 let sheet = DisplaySheet()

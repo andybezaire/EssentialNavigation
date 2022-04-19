@@ -105,6 +105,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A121BF2C280EDA57009B6956 /* RegistrationService */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1B11F2803FDC5000312F9 /* RegistrationService.swift */,
+				A1D1B12328040706000312F9 /* LocalRegistrationService.swift */,
+			);
+			path = RegistrationService;
+			sourceTree = "<group>";
+		};
+		A121BF2D280EDA71009B6956 /* RegistratonRequestService */ = {
+			isa = PBXGroup;
+			children = (
+				A178E3A028047C41006841AE /* RegistrationRequestService.swift */,
+				A178E3A628048662006841AE /* AutomaticRegistrationRequestService.swift */,
+			);
+			path = RegistratonRequestService;
+			sourceTree = "<group>";
+		};
 		A1566F3C280354FB00500F98 = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +147,10 @@
 		A1566F47280354FC00500F98 /* EssentialNavigationApp */ = {
 			isa = PBXGroup;
 			children = (
+				A121BF2C280EDA57009B6956 /* RegistrationService */,
+				A121BF2D280EDA71009B6956 /* RegistratonRequestService */,
 				A1566F48280354FC00500F98 /* EssentialNavigationAppApp.swift */,
-				A1D1B11B2803F945000312F9 /* Models */,
+				A1D1B11B2803F945000312F9 /* ViewModels */,
 				A1566F7228036CFA00500F98 /* Views */,
 				A1566F4C280354FC00500F98 /* Assets.xcassets */,
 				A1566F4E280354FC00500F98 /* Preview Content */,
@@ -176,16 +196,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A1D1B11B2803F945000312F9 /* Models */ = {
+		A1D1B11B2803F945000312F9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				A1D1B11F2803FDC5000312F9 /* RegistrationService.swift */,
-				A1D1B12328040706000312F9 /* LocalRegistrationService.swift */,
-				A178E3A028047C41006841AE /* RegistrationRequestService.swift */,
-				A178E3A628048662006841AE /* AutomaticRegistrationRequestService.swift */,
 				A121BF28280EA50C009B6956 /* DisplaySheet.swift */,
+				A1D1B11D2803FD1B000312F9 /* RegisterViewModel.swift */,
+				A178E3A228047EEF006841AE /* RequestRegistrationCodeViewModel.swift */,
 			);
-			path = Models;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		A1D1B11C2803FC0B000312F9 /* Registration */ = {
@@ -195,8 +213,6 @@
 				A1566F7D280380B500500F98 /* RequestRegistrationCodeView.swift */,
 				A1566F7F2803823700500F98 /* SuccessfullyRegisteredView.swift */,
 				A1566F7B2803795500500F98 /* SubmitRegistrationCodeView.swift */,
-				A1D1B11D2803FD1B000312F9 /* RegisterViewModel.swift */,
-				A178E3A228047EEF006841AE /* RequestRegistrationCodeViewModel.swift */,
 				A178E3A828053E33006841AE /* RegisterButton.swift */,
 			);
 			path = Registration;
