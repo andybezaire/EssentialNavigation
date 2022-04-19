@@ -11,10 +11,6 @@ let requestService = AutomaticRegistrationRequestService() { registerViewModel.e
 
 let requestRegistrationCodeViewModel = RequestRegistrationCodeViewModel(service: requestService)
 
-class DisplaySheet: ObservableObject {
-    @Published var isPresented: Bool = false
-}
-
 let sheet = DisplaySheet()
 
 @main
