@@ -15,6 +15,7 @@ struct DoorsListView: View {
             .navigationTitle("Doors")
             .toolbar { RegisterButton() }
         }
+        .tabItem { Label("Doors", systemImage: "lock") }
     }
     
     var doorsListContent: some View {

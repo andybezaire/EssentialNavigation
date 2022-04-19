@@ -15,6 +15,7 @@ struct KeysListView: View {
             .navigationTitle("Keys")
             .toolbar { RegisterButton() }
         }
+        .tabItem { Label("Keys", systemImage: "key") }
     }
     
     var keysListContent: some View {

@@ -12,8 +12,9 @@ struct RegisterView: View {
                     SubmitRegistrationCodeView()
                 }
             }
-                .navigationTitle("Registration")
+            .navigationTitle("Registration")
         }
+        .tabItem { Label("Register", systemImage: "person.crop.circle.badge.xmark") }
     }
 }
 

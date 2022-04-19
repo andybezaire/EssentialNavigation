@@ -43,6 +43,7 @@ struct InfoView: View {
             .navigationTitle("Goals")
             .toolbar { RegisterButton() }
         }
+        .tabItem { Label("Info", systemImage: "info.circle") }
     }
 }
 
