@@ -33,6 +33,8 @@ private let instructions = """
     """
 
 struct InfoView: View {
+    @State private var instructions: String = ""
+
     var body: some View {
         NavigationView {
             Form {
@@ -43,6 +45,12 @@ struct InfoView: View {
             .toolbar { RegisterButton() }
         }
         .tabItem { Label("Info", systemImage: "info.circle") }
+        .onAppear {
+            if let instructionsURL = Bundle.main.url(forResource: "README", withExtension: "md"),
+               let instructions = try? String(contentsOf: instructionsURL) {
+                self.instructions = instructions
+            }
+        }
     }
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A121BF29280EA50C009B6956 /* DisplaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121BF28280EA50C009B6956 /* DisplaySheet.swift */; };
+		A121BF2B280EB5D9009B6956 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A121BF2A280EB1A4009B6956 /* README.md */; };
 		A1566F49280354FC00500F98 /* EssentialNavigationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F48280354FC00500F98 /* EssentialNavigationAppApp.swift */; };
 		A1566F4B280354FC00500F98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1566F4A280354FC00500F98 /* ContentView.swift */; };
 		A1566F4D280354FC00500F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1566F4C280354FC00500F98 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		A121BF28280EA50C009B6956 /* DisplaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySheet.swift; sourceTree = "<group>"; };
+		A121BF2A280EB1A4009B6956 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A1566F45280354FC00500F98 /* EssentialNavigationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialNavigationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1566F48280354FC00500F98 /* EssentialNavigationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialNavigationAppApp.swift; sourceTree = "<group>"; };
 		A1566F4A280354FC00500F98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		A1566F3C280354FB00500F98 = {
 			isa = PBXGroup;
 			children = (
+				A121BF2A280EB1A4009B6956 /* README.md */,
 				A1566F47280354FC00500F98 /* EssentialNavigationApp */,
 				A1566F58280354FD00500F98 /* EssentialNavigationAppTests */,
 				A1566F62280354FD00500F98 /* EssentialNavigationAppUITests */,
@@ -303,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A121BF2B280EB5D9009B6956 /* README.md in Resources */,
 				A1566F50280354FC00500F98 /* Preview Assets.xcassets in Resources */,
 				A1566F4D280354FC00500F98 /* Assets.xcassets in Resources */,
 			);
