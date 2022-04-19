@@ -9,6 +9,8 @@ class RegisterViewModel: ObservableObject {
 
     var isRegistered: Bool { registrationCode != nil }
 
+    var statusIcon: String { isRegistered ? "person.crop.circle.badge.checkmark" : "person.crop.circle.badge.xmark" }
+
     public init(service: RegistrationService) {
         self.service = service
         self.registrationCode = service.registrationCode

@@ -14,7 +14,10 @@ struct RegisterView: View {
             }
             .navigationTitle("Registration")
         }
-        .tabItem { Label("Register", systemImage: "person.crop.circle.badge.xmark") }
+        .tabItem {
+            Label("Register", systemImage: model.statusIcon)
+            .symbolRenderingMode(.multicolor)
+        }
     }
 }
 
